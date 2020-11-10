@@ -1,0 +1,566 @@
+/* Using downloaded fonts to style text */
+@import url('https://fonts.googleapis.com/css?family=Raleway|Varela+Round|Coda');
+@font-face {
+	font-family: 'Questrial';
+	src: url(../Fonts/Questrial-Regular.ttf);
+	font-family: 'Alegraya Sans';
+	src: url(../Fonts/AlegreyaSans-Regular.ttf);
+	font-family: 'Code';
+}
+
+
+
+/* Formatting all the elements contained in body */
+
+body {
+	font-family: 'Questrial', sans-serif;
+	width: 100%;
+	margin: 0;
+	color: ivory;
+	background-image: linear-gradient(to left top, #daa3ee, #d990f2, #d87df6, #d767f9, #d64cfc, #b164ff, #8c74ff, #667eff, #009cff, #00b5ff, #00caff, #49dcfb);
+}
+
+/* Navigation bar */
+
+nav {
+	position: relative;
+	overflow: hidden;
+	padding: 30px;
+	font-family: 'Questrial', sans-serif;
+}
+
+/* Formatting the left portion of the navigation bar */
+
+#homeStyling, #accountStyling {
+	float: left;
+	text-align: center;
+	padding: 16px 90px;
+	text-decoration: none;
+	font-size: 18px;
+	color: white;
+}
+
+/* Styling the logo */
+
+#centerlogo {
+	float: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-decoration: none;
+	font-weight: bolder;
+	font-size: 27px;
+}
+
+.logo {
+	font-family: 'Alegreya Sans', sans-serif;
+	background-color: #49DCFB;
+	color: white;
+	letter-spacing: 2px;
+}
+
+/* Formatting the right portion of the navigation bar */
+
+#gameStyling, #leaderboardStyling {
+	float: right;
+	text-align: center;
+	padding: 16px 70px;
+	text-decoration: none;
+	font-size: 18px;
+	font-family: 'Questrial', sans-serif;
+	color: white;
+}
+
+/* Nav bar element changes colour on hover */
+
+#gameStyling:hover, #leaderboardStyling:hover, #homeStyling:hover,#accountStyling:hover {
+	color: #D400FF;
+}
+
+/* Highlights a specific element of the nav bar */
+
+.select {
+	background-color: #49DCFB;
+	font-weight: bolder;
+}
+
+h1 {
+	padding-top: 10%;
+	text-align: center;
+	font-size: 80px;
+	font-family: 'Questrial', sans-serif;
+	letter-spacing: 2px;
+}
+
+/* Styles a button that leads to the game page */
+
+.play {
+	cursor: pointer;
+	border-radius: 5em;
+	color: #fff;
+	background: linear-gradient(to right, #d64cfc, #d87df6);
+	border: 0;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	font-family: 'Questrial', sans-serif;
+	margin-left: 45%;
+	font-size: 15px;
+	box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+	text-decoration: none;
+}
+
+#hangman {
+	font-size: 20px;
+}
+
+h2 {
+	padding-top: 5%;
+	text-align: center;
+	font-size: 70px;
+	font-family: 'Questrial', sans-serif;
+	letter-spacing: 2px;
+}
+
+p {
+	text-align: center;
+	font-size: 23px;
+	letter-spacing: 2px;
+}
+
+ol {
+	text-align: center;
+	font-size: 23px;
+	letter-spacing: 2px;
+}
+
+h3 {
+	padding-top: 5%;
+	text-align: center;
+	font-size: 70px;
+	font-family: 'Questrial', sans-serif;
+	letter-spacing: 2px;
+}
+
+/* Styles the aside the structural element */
+
+aside {
+	background-color: black;
+	grid-auto-rows: 1/2;
+	height: 133px;
+	margin-top: 130%;
+	margin-left: 50%;
+	width: 200px;
+}
+
+/* Styles the footer so it stays at the bottom of every page */
+
+footer p {
+	color: white;
+	line-height: 50px;
+	font-size: 23px;
+	text-align: center;
+	margin: 0 auto;
+	display: inline-block;
+	font-family: 'Questrial', sans-serif;
+	margin-left: 36%;
+padding-top:20%;
+}
+
+/* Creates a CSS grid layout */
+
+
+.wrapper {
+	display: inline-grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20%;
+	margin-top: 6%;
+	margin-left: 14.5%;
+	margin-bottom: 2.5%;
+}
+
+/* Styling of login form */
+
+.loginForm {
+	background-color: white;
+	background-size: cover;
+	background-position: center center;
+	width: 380px;
+	height: 380px;
+	border-radius: 5px;
+	box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+
+}
+
+/* Styling of registration form */
+
+.registerForm {
+	background-color: white;
+	background-size: cover;
+	background-position: center center;
+	width: 380px;
+	height: 380px;
+	border-radius: 5px;
+	box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+
+.sign {
+	padding-top: 59px;
+	color: #d64cfc;
+	font-family: 'Questrial', sans-serif;
+	font-weight: bold;
+	font-size: 23px;
+}
+
+.sign2 {
+	padding-top: 20px;
+	color: #d64cfc;
+	font-family: 'Questrial', sans-serif;
+	font-weight: bold;
+	font-size: 23px;
+}
+
+.user {
+	width: 76%;
+	color: rgb(38, 50, 56);
+	font-weight: 700;
+	font-size: 14px;
+	letter-spacing: 1px;
+	background: rgba(136, 126, 126, 0.04);
+	padding: 10px 20px;
+	border: none;
+	border-radius: 20px;
+	outline: none;
+	box-sizing: border-box;
+	border: 2px solid rgba(0, 0, 0, 0.02);
+	margin-bottom: 50px;
+	margin-left: 46px;
+	text-align: center;
+	margin-bottom: 27px;
+	font-family: 'Questrial', sans-serif;
+}
+
+.pass {
+	width: 76%;
+	color: rgb(38, 50, 56);
+	font-weight: 700;
+	font-size: 14px;
+	letter-spacing: 1px;
+	background: rgba(136, 126, 126, 0.04);
+	padding: 10px 20px;
+	border: none;
+	border-radius: 20px;
+	outline: none;
+	box-sizing: border-box;
+	border: 2px solid rgba(0, 0, 0, 0.02);
+	margin-bottom: 50px;
+	margin-left: 46px;
+	text-align: center;
+	margin-bottom: 27px;
+	font-family: 'Questrial', sans-serif;
+}
+
+.submit {
+	cursor: pointer;
+	border-radius: 5em;
+	color: white;
+	background: linear-gradient(to right, #d64cfc, #d87df6);
+	border: 0;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	font-family: 'Questrial', sans-serif;
+	margin-left: 35%;
+	font-size: 15px;
+	box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+}
+
+#login a {
+	text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+	color: #ffc0cb;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+/* Styling the leaderboard table*/
+
+table {
+	width: 40%;
+	margin: 5%;
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+}
+
+#page-title {
+	padding-top: 1.8%;
+	font-size: 50px;
+	color: white;
+	font-family: 'Questrial', sans-serif;
+}
+
+thead th {
+	background-color: #57BAE8;
+	color: #324B4F;
+	text-align: left;
+	padding: 10px;
+}
+
+td, th {
+	border: solid 1px #1E9DAF;
+	padding: 5px;
+	color: black;
+}
+
+/* Giving alternate colours to the table */
+
+tr:nth-child(odd) {
+	background: #DAE5F4;
+}
+
+tr:nth-child(even) {
+	background: #57BAE8;
+}
+
+/* Creating a flip card and styling it */
+
+.flip-card {
+	background-color: transparent;
+	width: 470px;
+	height: 470px;
+	margin-bottom: 3%;
+	margin-left: 20%;
+	margin-right: auto;
+	margin-top: 26%;
+	perspective: 1000px;
+}
+
+/* This container is needed to position the front and back side */
+
+.flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+
+/* The flip card does a horizontal flip when cursor is hovered over it */
+
+.flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+}
+
+/* Positions the front and back side */
+
+.flip-card-front, .flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+}
+
+/* Styling of the front side */
+
+.flip-card-front {
+	background-color: black;
+	border: 1px solid black;
+	border-radius: 2%;
+	color: white;
+}
+
+/* Styling of the back side */
+
+.flip-card-back {
+	background-color: white;
+	color: black;
+	border: 1px solid white;
+	border-radius: 2%;
+	transform: rotateY(180deg);
+}
+
+/* Game page */
+
+article {
+	background-color: black;
+	height: 380px;
+	padding-top: 2%;
+	margin-top: 5%;
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 2%;
+}
+
+/* Styles the div where the score and tries left are shown */
+
+.scoreboard {
+	margin: 5% auto;
+	border: 3px solid white;
+	border-radius: 4px;
+	text-align: center;
+	width: 200px;
+	color: white;
+	font-size: 46px;
+	padding: 15px 20px;
+	font-family: Asap, sans-serif;
+	position: relative;
+}
+
+.badge {
+	background: #49dcfb;
+	color: white;
+	font-size: 14px;
+	padding: 2px 10px;
+	font-family: Asap, sans-serif;
+}
+
+/* Styles the score label */
+
+#score-label {
+	position: absolute;
+	top: 30px;
+	left: -25px;
+}
+
+/*Styles the label where the no. of tries left is displayed */
+
+#tries-label {
+	position: absolute;
+	top: 30px;
+	right: -30px;
+}
+
+/* This styles the questions displayed */
+
+.question>p {
+	font-size: 25px;
+	margin: 2%;
+	text-align: center;
+	color: white;
+	font-family: 'Questrial', sans-serif
+}
+
+.letters {
+	font-size: 25px;
+	margin: 2%;
+	text-align: center;
+	color: white;
+	font-family: 'Questrial', sans-serif
+}
+
+.submit1 {
+	cursor: pointer;
+	border-radius: 5em;
+	color: white;
+	background: linear-gradient(to right, #8c74ff, #49dcfb);
+	padding-left: 4%;
+	padding-right: 4%;
+	padding-bottom: 1%;
+	padding-top: 1%;
+	font-family: 'Questrial', sans-serif;
+	font-size: 15px;
+	margin: 43.5%;
+}
+
+/* Styling the input field that the user enters the answer to */
+
+.answer {
+	width: 40%;
+	font-weight: 700;
+	font-size: 14px;
+	letter-spacing: 1px;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	border-radius: 20px;
+	outline: none;
+	box-sizing: border-box;
+	margin-bottom: 50px;
+	margin-left: 25%;
+	text-align: center;
+	margin-bottom: 27px;
+	font-family: 'Questrial', sans-serif;
+	margin-bottom: -0.5px;
+}
+
+/* Adjusts the size of the image so it fits the div above it */
+
+img {
+	height: 250px;
+	width: 1000px;
+}
+
+.animation {
+	margin-top: 2%;
+	margin-bottom: 10%;
+	float: right;
+}
+
+#account {
+	display:none;
+}
+
+
+.title {
+	color: white;
+	font-family: "Coda", sans-serif;
+	text-align: center;
+		font-size:200%;
+  }
+  .title span {
+	color: #55acee;
+   
+  }
+  
+  .user-profile {
+	margin-left:auto;
+	margin-right:auto;
+
+	  width: 25em; 
+	height: 9em;
+	background: #fff;
+	border-radius: .3em;
+  }
+  
+  .user-profile  .displayUsername {
+	margin: auto;
+	text-align:center;
+	color: #658585;
+	font-size: 1.53em;
+	font-family: "Coda", sans-serif;
+	font-weight: bold;
+  }
+  .user-profile  .displayEmail {
+	margin-left:31.5%;
+	display: inline-block;
+	color: #81cce8;
+	font-size: .87em;
+	font-family: "varela round", sans-serif;
+  }
+  
+  
+  .user-profile .logout {
+	display:block;
+	margin-left:40.5%;
+	margin-top:10%;
+	font-size:110%;
+	font-family: "Coda", sans-serif;
+	background-color:black;
+	width:17.5%;
+   padding:1.5%;
+	color:white;
+	border-radius:10%;
+	letter-spacing:1px;
+  }
+  
+  .user-profile a{
+	text-decoration: none;
+  } 
+  
+  .user-profile .logout:hover{
+	background-color:#81cce8;
+  }

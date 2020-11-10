@@ -1,0 +1,466 @@
+body {
+    background:black;
+    }
+    @font-face {
+        font-family: 'SequentialistBB';
+        src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/306FA6_1_0.woff2') format('woff2'),
+    }
+    
+    @font-face {
+        font-family: 'Questrial';
+        src: url(Fonts/Questrial-Regular.ttf);
+        font-family: 'Alegraya Sans';
+        src: url(Fonts/AlegreyaSans-Regular.ttf);
+    }
+    
+    
+    
+    nav {
+        position: relative;
+        overflow: hidden;
+        padding: 30px;
+    background-color:'black';
+        font-family: 'Questrial', sans-serif;
+    }
+    /* Formatting the left portion of the navigation bar */
+    
+    #homeStyling, #accountStyling {
+        float: left;
+        text-align: center;
+        padding: 16px 90px;
+        text-decoration: none;
+        font-size: 18px;
+        color: white;
+    }
+    
+    /* Styling the logo */
+    
+    #centerlogo {
+        float: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-decoration: none;
+        font-weight: bolder;
+        font-size: 27px;
+    }
+    
+    .logo {
+        font-family: 'Alegreya Sans', sans-serif;
+        background-color: #49DCFB;
+        color: white;
+        letter-spacing: 2px;
+    }
+    
+    /* Formatting the right portion of the navigation bar */
+    
+    #gameStyling, #leaderboardStyling {
+        float: right;
+        text-align: center;
+        padding: 16px 70px;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: 'Questrial', sans-serif;
+        color: white;
+    }
+    
+    /* Nav bar element changes colour on hover */
+    
+    #gameStyling:hover, #leaderboardStyling:hover, #homeStyling:hover,#accountStyling:hover {
+        color: #D400FF;
+    }
+    
+    /* Highlights a specific element of the nav bar */
+    
+    .select {
+        background-color: #49DCFB;
+        font-weight: bolder;
+    }
+    #animatedBackground {
+      width:70%;
+      height: 65%;
+      position: absolute;
+      top: 17.5%;
+      left: 15%;
+      background: url("../images/city.jpg");
+      background-repeat: repeat;
+      background-position: 0 0;
+      background-size: auto 100%;
+    /*adjust s value for speed*/
+      animation: animatedBackground 100s linear infinite;
+      overflow:hidden;
+     
+    }
+    @keyframes animatedBackground {
+        from {
+          background-position: 0 0;
+        }
+      /*use negative width if you want it to flow right to left else and positive for left to right*/
+        to {
+          background-position: -10000px 0;
+        }
+      }
+    #animatedBackground2 {
+        width:70%;
+        height: 65%;
+        position: absolute;
+        top: 17.5%;
+        left: 15%;
+        background: url("../images/city2.jpg");
+        background-repeat: repeat;
+        background-position: 0 0;
+        background-size: auto 100%;
+      /*adjust s value for speed*/
+        animation: animatedBackground2 100s linear infinite;
+        overflow:hidden;
+       display:none;
+      }
+    
+      @keyframes animatedBackground2 {
+        from {
+          background-position: 0 0;
+        }
+      /*use negative width if you want it to flow right to left else and positive for left to right*/
+        to {
+          background-position: -10000px 0;
+        }
+      }
+    
+    .modal {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1.0);
+        position: relative;
+        
+        transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    }
+    .modal-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: 'Karma', serif;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 1rem 1.5rem;
+        width: 24rem;
+        border-radius: 0.2rem;
+    }
+   
+    
+    #man {
+        height:35%;
+        position: absolute;
+        padding-top: 21.5%;
+        display:none;
+        
+    
+    }
+    
+    #man2 {
+        height:35%;
+        position: absolute;
+        padding-top: 22%;
+    
+    
+    }
+    
+    #sec-man {
+        height:35%;
+        position: absolute;
+        padding-top: 26%;
+        display:none;
+        
+    
+    }
+    
+    #sec-man2 {
+        height:35%;
+        position: absolute;
+        padding-top: 26%;
+        display:none;
+        
+    
+    }
+    
+    #trd-man {
+      height:35%;
+      position: absolute;
+      padding-top: 30.3%;
+      display:none;
+      
+    
+    }
+    
+    #trd-man2 {
+      height:35%;
+      position: absolute;
+      padding-top: 30.3%;
+      display:none;
+      
+    
+    }
+    
+    .box {
+        width: 180px;
+        margin-left:19.5%;
+        margin-top:15%;
+        background: white;
+        padding: 5px;
+        text-align: center;
+        display:none;
+        color: black;
+        
+        position:absolute;
+        border-radius: 1%;
+      }
+    
+    
+      #box2 {
+        width: 180px;
+        margin-left:19.5%;
+        margin-top:18%;
+        background: white;
+        padding: 5px;
+        text-align: center;
+        display:none;
+        color: black;
+        
+        position:absolute;
+        border-radius: 1%;
+      }
+      #box3 {
+        width: 180px;
+        margin-left:19.5%;
+        margin-top:22%;
+        background: white;
+        padding: 5px;
+        text-align: center;
+        display:none;
+        color: black;
+        
+        position:absolute;
+        border-radius: 1%;
+      }
+      .sb:before {
+        content: "";
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        border-left: 10px solid white;
+        border-right: 10px solid transparent;
+        border-top: 10px solid white;
+        border-bottom: 10px solid transparent;
+        left: 19px;
+        
+        bottom: -19px;
+      }
+      .sb2:before {
+        content: "";
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        border-left: 10px solid white;
+        border-right: 10px solid transparent;
+        border-top: 10px solid white;
+        border-bottom: 10px solid transparent;
+        left: 19px;
+        bottom: -19px;
+      }
+    
+      .words {
+    font-family: 'Karma', serif;
+    border-top:3px solid #5DBCD2;
+    border-bottom: 3px solid 	#5DBCD2;
+    padding:2%;
+    margin:2%;
+    font-size:150%;
+    font-weight:bolder;
+    text-transform:lowercase;
+      }
+      .words2 {
+        font-family: 'Karma', serif;
+        border-top:3px solid 	#5DBCD2;
+        border-bottom: 3px solid 	#5DBCD2;
+        padding:2%;
+        margin:2%;
+        font-size:150%;
+        font-weight:bolder;
+        text-transform:lowercase;
+          }
+      
+    
+    
+    .bg {
+        color: #5fd898;
+    
+                    text-shadow: 0 0 30px #43d688;
+    }
+    button {
+      float:right;
+    }
+    button {
+       border: none;
+      background-color: #FF7373;
+      box-shadow: 0px 5px 0px 0px #CE4646;
+      outline: none;
+      border-radius: 5px;
+      padding: 10px 15px;
+      font-size: 22px;
+      text-decoration: none;
+      margin: 35px;
+      color: #fff;
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+    }
+    
+    button:active {
+      transform: translate(0px, 5px);
+      -webkit-transform: translate(0px, 5px);
+      box-shadow: 0px 1px 0px 0px;
+    }
+    
+    
+    .outerWrap {
+        position:absolute;
+       margin-left:80%;
+       display:none;
+      
+    }
+    .outerWrap2 {
+      position:absolute;
+     margin-left:80%;
+     display:none;
+    
+    }
+    .outerWrap3 {
+      position:absolute;
+     margin-left:80%;
+     display:none;
+    
+    }
+    .scoreWrap{
+      border:3px solid #5DBCD2;
+      background:white;
+      height:80%;
+      text-align:center;
+      font-family: 'Karma', serif;
+      font-weight:bolder;
+      border-radius:2%;
+     
+    }
+    
+    .timeWrap{
+      border:3px solid #5DBCD2;
+      background:white;
+      height:80%;
+      text-align:center;
+      font-family: 'Karma', serif;
+      font-weight:bolder;
+      border-radius:3%;
+      
+    }
+    
+    .timestatus {
+      border:3px solid #5DBCD2;
+      background:white;
+      font-size:100%;
+      text-align:center;
+      font-family: 'Karma', serif;
+      font-weight:bolder;
+      border-radius:2%;
+      display:none;
+    }
+    .timeWrap2{
+      border:3px solid #5DBCD2;
+      background:white;
+      height:80%;
+      text-align:center;
+      font-family: 'Karma', serif;
+      font-weight:bolder;
+      border-radius:3%;
+      
+    }
+    
+    .timestatus2 {
+      border:3px solid #5DBCD2;
+      background:white;
+      font-size:100%;
+      text-align:center;
+      font-family: 'Karma', serif;
+      font-weight:bolder;
+      border-radius:2%;
+      display:none;
+    }
+    .timeWrap3{
+      border:3px solid #5DBCD2;
+      background:white;
+      height:80%;
+      text-align:center;
+      font-family: 'Karma', serif;
+      font-weight:bolder;
+      border-radius:3%;
+      
+    }
+    
+    .timestatus3 {
+      border:3px solid #5DBCD2;
+      background:white;
+      font-size:100%;
+      text-align:center;
+      font-family: 'Karma', serif;
+      font-weight:bolder;
+      border-radius:2%;
+      display:none;
+    }
+  
+    
+    
+    .loseGame {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+      visibility: visible;
+      transform: scale(1.0);
+      position: relative;
+      transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+     display:none;
+    }
+       
+    .winGame {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1.0);
+        position: relative;
+        transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+       display:none;
+      }
+
+      .loginMsg {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1.0);
+        position: relative;
+        transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+       display:none;
+      }
+      
